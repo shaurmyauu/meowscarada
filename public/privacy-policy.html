@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <meta name="theme-color" content="#ffffff">
     <style>
@@ -27,7 +25,7 @@
         }
 
         .social-icons a img {
-            filter: none;
+            filter: none; 
             -webkit-filter: none; 
         }
 
@@ -49,152 +47,95 @@
     </style>
 </head>
 <body>
-<header>
-    <div class="logo" onclick="window.location.href='index.html'">
-        <img src="https://cdn.discordapp.com/avatars/1256968181180928080/552116eb70c3948fee52e98105bb6e89.webp?size=1024&format=webp&width=0&height=204" alt="Meowscarada Icon">
-        <span>Meowscarada</span>
-    </div>
-    <nav>
-        <div class="nav-item">
-            <a href="#">Features <img src="images/ico.png" class="custom-icon" alt="Custom Icon"></a>
-            <div class="dropdown">
-                <!-- Dropdown items -->
-                <div class="dropdown-item" onclick="window.location.href='pokemon-spawn.html'">
-                    <img src="images/ico1.png" alt="spawn">
-                    <div>
-                        <h4>Pokémon Spawn</h4>
-                        <p>Flexible and intuitive spawn setup</p>
+    <header>
+        <div class="logo" onclick="window.location.href='index.html'">
+            <img src="https://cdn.discordapp.com/avatars/1256968181180928080/552116eb70c3948fee52e98105bb6e89.webp?size=1024&format=webp&width=0&height=204" alt="Meowscarada Icon">
+            <span>Meowscarada</span>
+        </div>
+        <nav>
+            <div class="nav-item">
+                <a href="#">Features <img src="images/down.svg" class="custom-icon" alt="Custom Icon"></a>
+                <div class="dropdown">
+                    <!-- Dropdown items -->
+                    <div class="dropdown-item" onclick="window.location.href='pokemon-spawn.html'">
+                        <img src="images/ico3.svg" alt="spawn">
+                        <div>
+                            <h4>Pokémon Spawn</h4>
+                            <p>Flexible and intuitive spawn setup</p>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown-item" onclick="window.location.href='catching.html'">
-                    <img src="images/ico2.png" alt="Catching">
-                    <div>
-                        <h4>Catching</h4>
-                        <p>More about the Pokemon system and how to love them</p>
+                    <div class="dropdown-item" onclick="window.location.href='catching.html'">
+                        <img src="images/ico5.svg" alt="Catching">
+                        <div>
+                            <h4>Catching</h4>
+                            <p>More about the Pokemon system and how to love them</p>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown-item" onclick="window.location.href='feeding-and-improvements.html'">
-                    <img src="images/ico3.png" alt="Feeding and improvements">
-                    <div>
-                        <h4>Feeding and improvements</h4>
-                        <p>Improve your Pokemon and your stats</p>
+                    <div class="dropdown-item" onclick="window.location.href='feeding-and-improvements.html'">
+                        <img src="images/ico1.svg" alt="Feeding and improvements">
+                        <div>
+                            <h4>Feeding and improvements</h4>
+                            <p>Improve your Pokemon and your stats</p>
+                        </div>
                     </div>
-                </div>
-                <div class="dropdown-item" onclick="window.location.href='fun.html'">
-                    <img src="images/ico4.png" alt="Fun">
-                    <div>
-                        <h4>Fun</h4>
-                        <p>More fun commands!</p>
+                    <div class="dropdown-item" onclick="window.location.href='fun.html'">
+                        <img src="images/ico4.svg" alt="Fun">
+                        <div>
+                            <h4>Fun</h4>
+                            <p>More fun commands!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="nav-item">
-            <a href="#">Resources <img src="images/ico.png" class="custom-icon" alt="Custom Icon"></a>
-            <div class="dropdown">
-                <!-- Dropdown items -->
-                <div class="dropdown-item" onclick="window.location.href='terms-of-use.html'">
-                    <img src="images/ico1.png" alt="Terms Of Use">
-                    <div>
-                        <h4>Terms Of Use</h4>
+            <div class="nav-item">
+                <a href="#">Resources <img src="images/down.svg" class="custom-icon" alt="Custom Icon"></a>
+                <div class="dropdown">
+                    <!-- Dropdown items -->
+                    <div class="dropdown-item" onclick="window.location.href='terms-of-use.html'">
+                        <img src="images/ico1.svg" alt="Terms Of Use">
+                        <div>
+                            <h4>Terms Of Use</h4>
+                        </div>
+                    </div>
+                    <div class="dropdown-item" onclick="window.location.href='privacy-policy.html'">
+                        <img src="images/ico6.svg" alt="Privacy Policy">
+                        <div>
+                            <h4>Privacy Policy</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="dropdown-item" onclick="window.location.href='privacy-policy.html'">
-                    <img src="images/ico2.png" alt="Privacy Policy">
-                    <div>
-                        <h4>Privacy Policy</h4>
-                    </div>
-                </div>
-            </div>
+            </div>        
+       <!--  <div class="login-btn" id="login-btn"> 
+            <a href="/auth/discord" class="btn-login" onclick="window.open(this.href, 'newwindow', 'width=800,height=600'); return false;">Login</a>
         </div>
-    </nav>
-    <div class="login-btn" id="login-btn">
-        <a href="/auth/discord" class="btn-login" onclick="window.open(this.href, 'newwindow', 'width=800,height=600'); return false;">Login</a>
-    </div>
-    <div class="user-info" id="user-info" style="display: none;">
-        <img id="user-avatar" src="" alt="User Avatar">
-        <span id="user-name"></span>
-        <a href="/logout" class="btn-discord-logout">Logout</a>
-    </div>    
-</header>
+        <div class="user-info" id="user-info" style="display: none;">
+            <img id="user-avatar" src="" alt="User Avatar">
+            <span id="user-name"></span>
+            <a href="/logout" class="btn-discord-logout">Logout</a>
+        </div>     -->  
+    </header>
 
 <main>
     <div class="intro">
-        <p class="server-count" id="server-counter">1234</p>
-        <h1>Create your dream<br>Together with Pokémon!</h1>
-        <p>Customize Pokémon,<br>feed them with new food, interact and level up!</p>
-        <div class="buttons">
-            <a href="https://discord.com/oauth2/authorize?client_id=1256968181180928080&permissions=1126468990921793&integration_type=0&scope=bot" class="btn-primary" onclick="window.open(this.href, 'newwindow', 'width=800,height=600'); return false;">Add me</a>
-            <a href="#features" class="btn-secondary">Dashboard</a>
-        </div>
+        <p class="server-count" id="server-counter" style="visibility: hidden; display: none;">
+        </p>
     </div>
 </main>
 
-<div class="donor-list">
-    <h2>THANK YOU FOR HELPING US GET BETTER</h2>
-    <div class="donors">
-        <div class="donor">
-            <div class="glow"></div> 
-            <img src="https://cdn.discordapp.com/avatars/818990445165150208/127c157939c1520bbef750ec68bd7ce1.webp?size=1024&format=webp&width=0&height=204" alt="Donor Avatar 1">
-            <span class="donor-name">_tatsusan</span>
-            <span class="donor-amount number-font">10$</span>
-        </div>
-        <div class="donor">
-            <div class="glow"></div>
-            <img src="https://cdn.discordapp.com/avatars/841357892812013578/a_13291f235b86c9bef768fc5cf4d657ed.gif?size=4096" alt="Donor Avatar 2">
-            <span class="donor-name">flamindy</span>
-            <span class="donor-amount number-font">5$</span>
-        </div>
-    </div>
-</div>
-
 <div class="content">
-    <div class="text-block">
-        <img src="images/image1.png" alt="Image 1" class="image">
-        <div class="text-container">
-            <h2>Pokémon Spawns</h2>
-            <p>Customize Pokémon spawns<br>And catch them with everyone else!</p>
-            <div class="commands">
-                <span class="command">/set_spawn</span>
-                <span class="command">/delete_spawn</span>
-            </div>
-        </div>
-    </div>
-    <div class="text-block reverse">
-        <img src="images/image2.png" alt="Image 2" class="image">
-        <div class="text-container">
-            <h2>Interact and<br>play mini games!</h2>
-            <p>Customize name, gender, description<br>Pokémon as you like, level up the Pokémon and trust the Pokémon!</p>
-            <div class="commands">
-                <span class="command">/inventory</span>
-                <span class="command">/bag</span>
-                <span class="command">/pick</span>
-                <span class="command">/feed</span>
-            </div>
-        </div>
-    </div>
-    <div class="text-block">
-        <img src="images/image3.png" alt="Image 3" class="image">
-        <div class="text-container">
-            <h2>Collect Pokémon and<br>travel with them!</h2>
-            <p>Catch Pokémon and collect a collection,<br>get trainer badges and develop your stats!</p>
-            <div class="commands">
-                <span class="command">/collect</span>
-                <span class="command">/quests</span>
-                <span class="command">/fishing</span>
-            </div>
-        </div>
-    </div>
-    <div class="text-block reverse">
-        <img src="images/image4.png" alt="Image 4" class="image">
-        <div class="text-container">
-            <h2>And much more!</h2>
-            <p>Have fun with RP reactions,<br>anonymous messages and other features!</p>
-            <div class="commands">
-                <span class="command">/reactions</span>
-                <span class="command">/anonmessage</span>
-            </div>
-        </div>
+    <div class="terms-container">
+        <h2># PRIVACY POLICY</h2>
+        <p>Here we inform you what we collect and for what purpose, what our product stores when using it.</p>
+
+        <h3># Collecting information</h3>
+        <p>We store information about users in tables within our database. This information is used to create game accounts for our Meowscarada product. However, we do not collect personal data such as IP addresses, phone numbers or email addresses.</p>
+
+        <h3># Usage data</h3>
+        <p>Using our website, we may collect cache, internet address, browser type, and pages you have visited, as well as other data. This information is stored by Google, not by us.</p>
+
+        <h3># Security and other sources</h3>
+        <p>Your personal data security is a priority for us, but if you click on external links that we are not affiliated with, you assume full responsibility for your security. It is recommended that you verify the sources' privacy policies before sharing your personal information with them.</p>
+
     </div>
 </div>
 

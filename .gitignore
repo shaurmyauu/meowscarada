@@ -2,5 +2,15 @@ server.js
 .env
 node_modules
 package.json
+script.js
+terms-of-use.html
+privacy-policy.html
+index.html
+fun.html
+feeding-and-improvements.html
+catching.html
+pokemon-spawn.html
+auth-success.html
+public
 package-lock.json
 *.ignore

@@ -207,7 +207,8 @@ nav {
     margin-top: 10px; 
     top: 0px; 
     font-family: 'Aquawax-Fx-Medium-trial', Arial, sans-serif;
-    right: -150px;
+    /* right: -150px; */
+    right: -30px;
     display: flex;
     align-items: center;
     z-index: 1000;

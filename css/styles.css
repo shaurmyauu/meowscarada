@@ -207,7 +207,10 @@ nav {
     margin-top: 10px; 
     top: 0px; 
     font-family: 'Aquawax-Fx-Medium-trial', Arial, sans-serif;
+<<<<<<< HEAD:public/css/styles.css
     /* right: -150px; */
+=======
+>>>>>>> c59e4eb1da8d16335e3907e8dacd0e8cfc3e3635:css/styles.css
     right: -30px;
     display: flex;
     align-items: center;
@@ -223,6 +226,7 @@ nav a {
     font-family: 'Aquawax-Fx-Medium-trial', Arial, sans-serif;
     padding: 10px 15px;
     cursor: pointer;
+    margin-left: 30px;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -238,6 +242,7 @@ nav a:hover {
     vertical-align: middle;
     transition: transform 0.3s ease;
 }
+
 
 .dropdown {
     position: absolute;

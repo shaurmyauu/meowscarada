@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <meta name="theme-color" content="#ffffff">
     <style>
@@ -17,7 +15,7 @@
         }
 
         nav a {
-            cursor: pointer; /* Добавляем указатель для ссылок в навигации */
+            cursor: pointer; 
         }
 
         .footer-bottom {
@@ -27,14 +25,15 @@
         }
 
         .social-icons a img {
-            filter: none; /* Отменяет любые фильтры */
-            -webkit-filter: none; /* Для поддержки в WebKit браузерах */
+            filter: none; 
+            -webkit-filter: none; 
         }
 
         .user-info {
             display: flex;
             align-items: center;
         }
+        
 
         .user-info img {
             width: 40px;
@@ -46,6 +45,7 @@
         #logout-btn {
             margin-left: 10px;
         }
+
     </style>
 </head>
 <body>
@@ -107,94 +107,48 @@
                     </div>
                 </div>
             </div>        
+<<<<<<< HEAD:public/terms-of-use.html
        <!--  <div class="login-btn" id="login-btn"> 
+=======
+        <div class="login-btn" id="login-btn">
+>>>>>>> c59e4eb1da8d16335e3907e8dacd0e8cfc3e3635:terms-of-use.html
             <a href="/auth/discord" class="btn-login" onclick="window.open(this.href, 'newwindow', 'width=800,height=600'); return false;">Login</a>
         </div>
         <div class="user-info" id="user-info" style="display: none;">
             <img id="user-avatar" src="" alt="User Avatar">
             <span id="user-name"></span>
             <a href="/logout" class="btn-discord-logout">Logout</a>
-        </div>     -->  
+<<<<<<< HEAD:public/terms-of-use.html
+        </div>     -->
+=======
+        </div>    
+>>>>>>> c59e4eb1da8d16335e3907e8dacd0e8cfc3e3635:terms-of-use.html
     </header>
-    
+
 <main>
     <div class="intro">
-        <p class="server-count" id="server-counter">1234</p>
-        <h1>Create your dream<br>Together with Pokémon!</h1>
-        <p>Customize Pokémon,<br>feed them with new food, interact and level up!</p>
-        <div class="buttons">
-            <a href="https://discord.com/oauth2/authorize?client_id=1256968181180928080&permissions=1126468990921793&integration_type=0&scope=bot" id="addMeBtn" class="btn-primary">Add me</a>
-            <a href="#features" class="btn-secondary">Dashboard</a>
-        </div>
+        <p class="server-count" id="server-counter" style="visibility: hidden; display: none;">
+        </p>
     </div>
 </main>
 
-<div class="donor-list">
-    <h2>THANK YOU FOR HELPING US GET BETTER</h2>
-    <div class="donors">
-        <div class="donor">
-            <div class="glow"></div> 
-            <img src="https://cdn.discordapp.com/avatars/818990445165150208/127c157939c1520bbef750ec68bd7ce1.webp?size=1024&format=webp&width=0&height=204" alt="Donor Avatar 1">
-            <span class="donor-name">_tatsusan</span>
-            <span class="donor-amount number-font">10$</span>
-        </div>
-        <div class="donor">
-            <div class="glow"></div>
-            <img src="https://media.discordapp.net/attachments/1257740770350465045/1267208467924516917/a_13291f235b86c9bef768fc5cf4d657ed.png?ex=66a7f35a&is=66a6a1da&hm=2cc9f496023429e6ab100d299711c22c1ad56d61f8d5b0a09bd2f812eb4258f7&=&format=webp&quality=lossless&width=262&height=262" alt="Donor Avatar 2">
-            <span class="donor-name">flamindy</span>
-            <span class="donor-amount number-font">5$</span>
-        </div>
-    </div>
-</div>
-
-
 <div class="content">
-    <div class="text-block">
-        <img src="images/image1.png" alt="Image 1" class="image">
-        <div class="text-container">
-            <h2>Pokémon Spawns</h2>
-            <p>Customize Pokémon spawns<br>And catch them with everyone else!</p>
-            <div class="commands">
-                <span class="command">/set_spawn</span>
-                <span class="command">/delete_spawn</span>
-            </div>
-        </div>
-    </div>
-    <div class="text-block reverse">
-        <img src="images/image2.png" alt="Image 2" class="image">
-        <div class="text-container">
-            <h2>Interact and<br>play mini games!</h2>
-            <p>Customize name, gender, description<br>Pokémon as you like, level up the Pokémon and trust the Pokémon!</p>
-            <div class="commands">
-                <span class="command">/inventory</span>
-                <span class="command">/bag</span>
-                <span class="command">/pick</span>
-                <span class="command">/feed</span>
-            </div>
-        </div>
-    </div>
-    <div class="text-block">
-        <img src="images/image3.png" alt="Image 3" class="image">
-        <div class="text-container">
-            <h2>Collect Pokémon and<br>travel with them!</h2>
-            <p>Catch Pokémon and collect a collection,<br>get trainer badges and develop your stats!</p>
-            <div class="commands">
-                <span class="command">/collect</span>
-                <span class="command">/quests</span>
-                <span class="command">/fishing</span>
-            </div>
-        </div>
-    </div>
-    <div class="text-block reverse">
-        <img src="images/image4.png" alt="Image 4" class="image">
-        <div class="text-container">
-            <h2>And much more!</h2>
-            <p>Have fun with RP reactions,<br>anonymous messages and other features!</p>
-            <div class="commands">
-                <span class="command">/reactions</span>
-                <span class="command">/anonmessage</span>
-            </div>
-        </div>
+    <div class="terms-container">
+        <h2># TERMS OF SERVICE</h2>
+        <p>By utilizing our services, you are bound by Terms of Service and conditions outlined in the User Agreement as well as the Privacy Policy.</p>
+        <p>Our product is a Discord bot with a wide range of features, which is configured to work with Pokémon. We are not affiliated with The Pokémon Company or Discord Inc. If you do not fully agree with any aspect of our terms and conditions, you are not permitted to use our product.</p>
+
+        <h3># Safety and security</h3>
+        <p>We are not liable for any third-party websites or sources that may resemble ours, nor are we responsible for your personal safety when using our product. It is your sole responsibility to use Meowscarada at your own risk. The administration or technical support team will never request personal data from you. For security reasons, please ensure that you have checked the information three times before submitting it. If any personal information regarding us is requested, please block it and notify us immediately.</p>
+        <p>The bot can utilize commands that allow it to write messages. We aim to provide protection against spam and fraudulent activity by covering all potential vulnerabilities. The bot will never initiate private messages that contain fraudulent or spam content. Please ignore any such messages.</p>
+
+        <h3># Internal purchases</h3>
+        <p>If you wish to purchase a premium subscription to our bot, we may require additional information from you in order to process the payment. At present, all payments are accepted exclusively through the PayPal payment system, in person with the company representative. In this case, we may refuse or cancel your order for various reasons if your payment fails, or if you engage in fraudulent activity or disseminate harmful information using our products. We reserve the right to repossess the goods in such cases.</p>
+        <p>WE ALSO RESERVE THE RIGHT NOT TO REFUND THE PAYMENT IF YOU HAVE MADE A MISTAKE REGARDING THE PRICE OF THE PRODUCT. YOU WILL ONLY RECEIVE THE PRODUCT IF WE RECEIVE THE FULL AMOUNT OF PAYMENT. PAYMENTS ARE NON-REFUNDABLE.</p>
+
+        <h3># Errors and omissions</h3>
+        <p>We are continuously improving our product and striving for excellence. However, we are experiencing some difficulties and delays with the updating of information and our product. As a result, there may be errors, gaps in the bot, and on the site. Therefore, we reserve the right to make mistakes and to have bugs in our system. We also reserve the right not to announcements updates and bug fixes.</p>
+        <p>We cannot guarantee the complete functionality of our products and services. If you experience any issues while using our website or products, please contact our support team.</p>
     </div>
 </div>
 

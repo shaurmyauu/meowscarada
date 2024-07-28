@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const counterElement = document.getElementById('server-counter');
     const logoutBtn = document.getElementById('logout-btn');
 
-    const targetCount = 50;
+    const targetCount = 100;
     let count = 0;
 
     const increment = () => {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             count++;
             const displayCount = count === targetCount ? `${count}+` : count;
             counterElement.innerHTML = `I have already been added to <span class="number-font">${displayCount}</span> servers!`;
-            setTimeout(increment, 50);
+            setTimeout(increment, 30);
         } else {
             counterElement.innerHTML = `I have already been added to <span class="number-font">${targetCount}+ </span> servers!`;
         }

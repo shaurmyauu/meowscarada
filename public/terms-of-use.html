@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meowscarada</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        .logo {
+            cursor: pointer;
+        }
+
+        nav a {
+            cursor: pointer; 
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+
+        .social-icons a img {
+            filter: none; 
+            -webkit-filter: none; 
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        #logout-btn {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo" onclick="window.location.href='index.html'">
+        <img src="https://cdn.discordapp.com/avatars/1256968181180928080/552116eb70c3948fee52e98105bb6e89.webp?size=1024&format=webp&width=0&height=204" alt="Meowscarada Icon">
+        <span>Meowscarada</span>
+    </div>
+    <nav>
+        <div class="nav-item">
+            <a href="#">Features <img src="images/ico.png" class="custom-icon" alt="Custom Icon"></a>
+            <div class="dropdown">
+                <!-- Dropdown items -->
+                <div class="dropdown-item" onclick="window.location.href='pokemon-spawn.html'">
+                    <img src="images/ico1.png" alt="spawn">
+                    <div>
+                        <h4>Pokémon Spawn</h4>
+                        <p>Flexible and intuitive spawn setup</p>
+                    </div>
+                </div>
+                <div class="dropdown-item" onclick="window.location.href='catching.html'">
+                    <img src="images/ico2.png" alt="Catching">
+                    <div>
+                        <h4>Catching</h4>
+                        <p>More about the Pokemon system and how to love them</p>
+                    </div>
+                </div>
+                <div class="dropdown-item" onclick="window.location.href='feeding-and-improvements.html'">
+                    <img src="images/ico3.png" alt="Feeding and improvements">
+                    <div>
+                        <h4>Feeding and improvements</h4>
+                        <p>Improve your Pokemon and your stats</p>
+                    </div>
+                </div>
+                <div class="dropdown-item" onclick="window.location.href='fun.html'">
+                    <img src="images/ico4.png" alt="Fun">
+                    <div>
+                        <h4>Fun</h4>
+                        <p>More fun commands!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#">Resources <img src="images/ico.png" class="custom-icon" alt="Custom Icon"></a>
+            <div class="dropdown">
+                <!-- Dropdown items -->
+                <div class="dropdown-item" onclick="window.location.href='terms-of-use.html'">
+                    <img src="images/ico1.png" alt="Terms Of Use">
+                    <div>
+                        <h4>Terms Of Use</h4>
+                    </div>
+                </div>
+                <div class="dropdown-item" onclick="window.location.href='privacy-policy.html'">
+                    <img src="images/ico2.png" alt="Privacy Policy">
+                    <div>
+                        <h4>Privacy Policy</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="login-btn" id="login-btn">
+        <a href="/auth/discord" class="btn-login" onclick="window.open(this.href, 'newwindow', 'width=800,height=600'); return false;">Login</a>
+    </div>
+    <div class="user-info" id="user-info" style="display: none;">
+        <img id="user-avatar" src="" alt="User Avatar">
+        <span id="user-name"></span>
+        <a href="/logout" class="btn-discord-logout">Logout</a>
+    </div>
+</header>
+
+<main>
+    <div class="intro">
+        <p class="server-count" id="server-counter" style="visibility: hidden; display: none;">
+        </p>
+    </div>
+</main>
+
+<div class="content">
+    <div class="terms-container">
+        <h2># TERMS OF SERVICE</h2>
+        <p>By utilizing our services, you are bound by Terms of Service and conditions outlined in the User Agreement as well as the Privacy Policy.</p>
+        <p>Our product is a Discord bot with a wide range of features, which is configured to work with Pokémon. We are not affiliated with The Pokémon Company or Discord Inc. If you do not fully agree with any aspect of our terms and conditions, you are not permitted to use our product.</p>
+
+        <h3># Safety and security</h3>
+        <p>We are not liable for any third-party websites or sources that may resemble ours, nor are we responsible for your personal safety when using our product. It is your sole responsibility to use Meowscarada at your own risk. The administration or technical support team will never request personal data from you. For security reasons, please ensure that you have checked the information three times before submitting it. If any personal information regarding us is requested, please block it and notify us immediately.</p>
+        <p>The bot can utilize commands that allow it to write messages. We aim to provide protection against spam and fraudulent activity by covering all potential vulnerabilities. The bot will never initiate private messages that contain fraudulent or spam content. Please ignore any such messages.</p>
+
+        <h3># Internal purchases</h3>
+        <p>If you wish to purchase a premium subscription to our bot, we may require additional information from you in order to process the payment. At present, all payments are accepted exclusively through the PayPal payment system, in person with the company representative. In this case, we may refuse or cancel your order for various reasons if your payment fails, or if you engage in fraudulent activity or disseminate harmful information using our products. We reserve the right to repossess the goods in such cases.</p>
+        <p>WE ALSO RESERVE THE RIGHT NOT TO REFUND THE PAYMENT IF YOU HAVE MADE A MISTAKE REGARDING THE PRICE OF THE PRODUCT. YOU WILL ONLY RECEIVE THE PRODUCT IF WE RECEIVE THE FULL AMOUNT OF PAYMENT. PAYMENTS ARE NON-REFUNDABLE.</p>
+
+        <h3># Errors and omissions</h3>
+        <p>We are continuously improving our product and striving for excellence. However, we are experiencing some difficulties and delays with the updating of information and our product. As a result, there may be errors, gaps in the bot, and on the site. Therefore, we reserve the right to make mistakes and to have bugs in our system. We also reserve the right not to announcements updates and bug fixes.</p>
+        <p>We cannot guarantee the complete functionality of our products and services. If you experience any issues while using our website or products, please contact our support team.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-divider">
+        <img src="images/image5.png" alt="Smiley" class="footer-smiley">
+    </div>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3><img src="https://cdn.discordapp.com/avatars/1256968181180928080/552116eb70c3948fee52e98105bb6e89.webp?size=1024&format=webp&width=0&height=204" alt="Bot Icon" class="about-icon">Meowscarada</h3>
+            <p>Meowscarada is not part of Discord inc.<br>It's just a development under a mug of tea and a couple of dead nerves!</p>
+        </div>
+        <div class="footer-column">
+            <h3>Socials</h3>
+            <p>
+                <a href="https://x.com/shaurmyauu">Twitter</a><br>
+                <a href="https://discord.gg/MMq6pHuQ72">Discord</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://discord.gg/MMq6pHuQ72"><img src="images/discord.png" alt="Discord"></a>
+            <a href="https://x.com/shaurmyauu"><img src="images/x.png" alt="Twitter"></a>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

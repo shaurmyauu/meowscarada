@@ -207,7 +207,7 @@ nav {
     margin-top: 10px; 
     top: 0px; 
     font-family: 'Aquawax-Fx-Medium-trial', Arial, sans-serif;
-    right: -150px;
+    right: -30px;
     display: flex;
     align-items: center;
     z-index: 1000;
@@ -222,6 +222,7 @@ nav a {
     font-family: 'Aquawax-Fx-Medium-trial', Arial, sans-serif;
     padding: 10px 15px;
     cursor: pointer;
+    margin-left: 30px;
     transition: background 0.3s, color 0.3s;
 }
 

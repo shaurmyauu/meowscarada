@@ -2,5 +2,9 @@ server.js
 .env
 node_modules
 package.json
+script.js
+fonts
+js
+public
 package-lock.json
 *.ignore
